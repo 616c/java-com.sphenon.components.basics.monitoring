@@ -1,7 +1,7 @@
 package com.sphenon.basics.monitoring;
 
 /****************************************************************************
-  Copyright 2001-2018 Sphenon GmbH
+  Copyright 2001-2024 Sphenon GmbH
 
   Licensed under the Apache License, Version 2.0 (the "License"); you may not
   use this file except in compliance with the License. You may obtain a copy
@@ -30,28 +30,28 @@ public class Factory_ProblemState {
 
         this.state_is_valid = true;
 
-        if (this.state.equals("IDLE"                      )) { this.problem_state = ProblemState.IDLE                      ; return; }
-        if (this.state.equals("IDLE_INCOMPLETE"           )) { this.problem_state = ProblemState.IDLE_INCOMPLETE           ; return; }
-        if (this.state.equals("OK"                        )) { this.problem_state = ProblemState.OK                        ; return; }
-        if (this.state.equals("OK_INCOMPLETE"             )) { this.problem_state = ProblemState.OK_INCOMPLETE             ; return; }
-        if (this.state.equals("INFO"                      )) { this.problem_state = ProblemState.INFO                      ; return; }
-        if (this.state.equals("INFO_INCOMPLETE"           )) { this.problem_state = ProblemState.INFO_INCOMPLETE           ; return; }
-        if (this.state.equals("NOTICE"                    )) { this.problem_state = ProblemState.NOTICE                    ; return; }
-        if (this.state.equals("NOTICE_INCOMPLETE"         )) { this.problem_state = ProblemState.NOTICE_INCOMPLETE         ; return; }
-        if (this.state.equals("WARNING"                   )) { this.problem_state = ProblemState.WARNING                   ; return; }
-        if (this.state.equals("WARNING_INCOMPLETE"        )) { this.problem_state = ProblemState.WARNING_INCOMPLETE        ; return; }
-        if (this.state.equals("SEVERE_WARNING"            )) { this.problem_state = ProblemState.SEVERE_WARNING            ; return; }
-        if (this.state.equals("SEVERE_WARNING_INCOMPLETE" )) { this.problem_state = ProblemState.SEVERE_WARNING_INCOMPLETE ; return; }
-        if (this.state.equals("ERROR"                     )) { this.problem_state = ProblemState.ERROR                     ; return; }
-        if (this.state.equals("ERROR_INCOMPLETE"          )) { this.problem_state = ProblemState.ERROR_INCOMPLETE          ; return; }
-        if (this.state.equals("CRITICAL_ERROR"            )) { this.problem_state = ProblemState.CRITICAL_ERROR            ; return; }
-        if (this.state.equals("CRITICAL_ERROR_INCOMPLETE" )) { this.problem_state = ProblemState.CRITICAL_ERROR_INCOMPLETE ; return; }
-        if (this.state.equals("FATAL_ERROR"               )) { this.problem_state = ProblemState.FATAL_ERROR               ; return; }
-        if (this.state.equals("FATAL_ERROR_INCOMPLETE"    )) { this.problem_state = ProblemState.FATAL_ERROR_INCOMPLETE    ; return; }
-        if (this.state.equals("EMERGENCY"                 )) { this.problem_state = ProblemState.EMERGENCY                 ; return; }
-        if (this.state.equals("EMERGENCY_INCOMPLETE"      )) { this.problem_state = ProblemState.EMERGENCY_INCOMPLETE      ; return; }
-        if (this.state.equals("PANIC"                     )) { this.problem_state = ProblemState.PANIC                     ; return; }
-        if (this.state.equals("PANIC_INCOMPLETE"          )) { this.problem_state = ProblemState.PANIC_INCOMPLETE          ; return; }
+        if (this.state.matches("(?i)idle"                                      )) { this.problem_state = ProblemState.IDLE                      ; return; }
+        if (this.state.matches("(?i)idle[_ -]\\(?incomplete\\)?"               )) { this.problem_state = ProblemState.IDLE_INCOMPLETE           ; return; }
+        if (this.state.matches("(?i)ok"                                        )) { this.problem_state = ProblemState.OK                        ; return; }
+        if (this.state.matches("(?i)ok[_ -]\\(?incomplete\\)?"                 )) { this.problem_state = ProblemState.OK_INCOMPLETE             ; return; }
+        if (this.state.matches("(?i)info"                                      )) { this.problem_state = ProblemState.INFO                      ; return; }
+        if (this.state.matches("(?i)info[_ -]\\(?incomplete\\)?"               )) { this.problem_state = ProblemState.INFO_INCOMPLETE           ; return; }
+        if (this.state.matches("(?i)notice"                                    )) { this.problem_state = ProblemState.NOTICE                    ; return; }
+        if (this.state.matches("(?i)notice[_ -]\\(?incomplete\\)?"             )) { this.problem_state = ProblemState.NOTICE_INCOMPLETE         ; return; }
+        if (this.state.matches("(?i)warning"                                   )) { this.problem_state = ProblemState.WARNING                   ; return; }
+        if (this.state.matches("(?i)warning[_ -]\\(?incomplete\\)?"            )) { this.problem_state = ProblemState.WARNING_INCOMPLETE        ; return; }
+        if (this.state.matches("(?i)severe[_ -]warning"                        )) { this.problem_state = ProblemState.SEVERE_WARNING            ; return; }
+        if (this.state.matches("(?i)severe[_ -]warning[_ -]\\(?incomplete\\)?" )) { this.problem_state = ProblemState.SEVERE_WARNING_INCOMPLETE ; return; }
+        if (this.state.matches("(?i)error"                                     )) { this.problem_state = ProblemState.ERROR                     ; return; }
+        if (this.state.matches("(?i)error[_ -]\\(?incomplete\\)?"              )) { this.problem_state = ProblemState.ERROR_INCOMPLETE          ; return; }
+        if (this.state.matches("(?i)critical[_ -]error"                        )) { this.problem_state = ProblemState.CRITICAL_ERROR            ; return; }
+        if (this.state.matches("(?i)critical[_ -]error[_ -]\\(?incomplete\\)?" )) { this.problem_state = ProblemState.CRITICAL_ERROR_INCOMPLETE ; return; }
+        if (this.state.matches("(?i)fatal[_ -]error"                           )) { this.problem_state = ProblemState.FATAL_ERROR               ; return; }
+        if (this.state.matches("(?i)fatal[_ -]error[_ -]\\(?incomplete\\)?"    )) { this.problem_state = ProblemState.FATAL_ERROR_INCOMPLETE    ; return; }
+        if (this.state.matches("(?i)emergency"                                 )) { this.problem_state = ProblemState.EMERGENCY                 ; return; }
+        if (this.state.matches("(?i)emergency[_ -]\\(?incomplete\\)?"          )) { this.problem_state = ProblemState.EMERGENCY_INCOMPLETE      ; return; }
+        if (this.state.matches("(?i)panic"                                     )) { this.problem_state = ProblemState.PANIC                     ; return; }
+        if (this.state.matches("(?i)panic[_ -]\\(?incomplete\\)?"              )) { this.problem_state = ProblemState.PANIC_INCOMPLETE          ; return; }
 
         this.state_is_valid = false;
         this.problem_state = null;
@@ -64,14 +64,12 @@ public class Factory_ProblemState {
         }
     }
 
-    public ProblemState create (CallContext call_context) {
-        Context context = Context.create(call_context);
-        CustomaryContext cc = CustomaryContext.create(context);
+    public ProblemState create (CallContext context) {
         try {
             this.validateState(context);
         } catch (ValidationFailure vf) {
-            cc.throwPreConditionViolation(context, vf, MonitoringStringPool.get(context, "0.0.1" /* At least one factory parameter is invalid */));
-            throw (ExceptionPreConditionViolation) null;
+            CustomaryContext.create((Context)context).throwPreConditionViolation(context, vf, MonitoringStringPool.get(context, "0.0.1" /* At least one factory parameter is invalid */));
+            throw (ExceptionPreConditionViolation) null; // compiler insists
         }
 
         return this.problem_state;

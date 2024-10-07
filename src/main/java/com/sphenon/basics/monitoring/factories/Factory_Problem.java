@@ -1,4 +1,4 @@
-package com.sphenon.basics.monitoring;
+package com.sphenon.basics.monitoring.factories;
 
 /****************************************************************************
   Copyright 2001-2024 Sphenon GmbH
@@ -15,11 +15,21 @@ package com.sphenon.basics.monitoring;
 *****************************************************************************/
 
 import com.sphenon.basics.context.*;
-import com.sphenon.basics.variatives.*;
-import com.sphenon.basics.variatives.classes.*;
+import com.sphenon.basics.exception.*;
+import com.sphenon.basics.notification.*;
+import com.sphenon.basics.customary.*;
+import com.sphenon.basics.validation.returncodes.*;
 
-public class MonitoringStringPoolRetriever {
-    static public MonitoringStringPool retrieve (CallContext context) {
-        return MonitoringStringPool.getSingleton(context);
+import com.sphenon.basics.monitoring.*;
+
+public class Factory_Problem {
+    private String message;
+
+    public void setMessage(CallContext context, String message) {
+        this.message = message;
+    }
+
+    public Problem create (CallContext context) {
+        return new ProblemMessage(context, message);
     }
 }

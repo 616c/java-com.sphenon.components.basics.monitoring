@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ALF/VUE context: replace name with text, then test BB/Arbeitsschritte
+-->
+<UIEquipmentMap CLASS="Map&lt;String,Vector&lt;UIEquipment&gt;&gt;" xmlns="http://xmlns.sphenon.com/com/sphenon/ui/vui">
+  <idle>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="nicht aktiv"
+          en="idle"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">idle</Value></style>
+  </idle>
+  <idle-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="nicht aktiv (unvollständig)"
+          en="idle-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">idle:incomplete</Value></style>
+  </idle-incomplete>
+  <ok>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ok"
+          en="ok"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">ok</Value></style>
+  </ok>
+  <ok-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ok (unvollständig)"
+          en="ok-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">ok:incomplete</Value></style>
+  </ok-incomplete>
+  <info>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="zur Information"
+          en="info"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">info</Value></style>
+  </info>
+  <info-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="zur Information (unvollständig)"
+          en="info-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">info:incomplete</Value></style>
+  </info-incomplete>
+  <notice>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="zur Kenntnisnahme"
+          en="notice"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">notice</Value></style>
+  </notice>
+  <notice-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="zur Kenntnisnahme (unvollständig)"
+          en="notice-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">notice:incomplete</Value></style>
+  </notice-incomplete>
+  <unknown>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="unbekannt"
+          en="unknown"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">unknown</Value></style>
+  </unknown>
+  <unknown-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="unbekannt (unvollständig)"
+          en="unknown-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">unknown:incomplete</Value></style>
+  </unknown-incomplete>
+  <caution>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Vorsicht"
+          en="caution"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">caution</Value></style>
+  </caution>
+  <caution-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Vorsicht (unvollständig)"
+          en="caution-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">caution:incomplete</Value></style>
+  </caution-incomplete>
+  <warning>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Warnung"
+          en="warning"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">warning</Value></style>
+  </warning>
+  <warning-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Warnung (unvollständig)"
+          en="warning-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">warning:incomplete</Value></style>
+  </warning-incomplete>
+  <severe-warning>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ernste Warnung"
+          en="severe-warning"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">severe-warning</Value></style>
+  </severe-warning>
+  <severe-warning-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ernste Warnung (unvollständig)"
+          en="severe-warning-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">severe-warning:incomplete</Value></style>
+  </severe-warning-incomplete>
+  <error>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Fehler"
+          en="error"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">error</Value></style>
+  </error>
+  <error-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Fehler (unvollständig)"
+          en="error-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">error:incomplete</Value></style>
+  </error-incomplete>
+  <critical-error>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="kritischer Fehler"
+          en="critical-error"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">critical-error</Value></style>
+  </critical-error>
+  <critical-error-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="kritischer Fehler (unvollständig)"
+          en="critical-error-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">critical-error:incomplete</Value></style>
+  </critical-error-incomplete>
+  <fatal-error>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="fataler Fehler"
+          en="fatal-error"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">fatal-error</Value></style>
+  </fatal-error>
+  <fatal-error-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="fataler Fehler (unvollständig)"
+          en="fatal-error-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">fatal-error:incomplete</Value></style>
+  </fatal-error-incomplete>
+  <emergency>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Notfall"
+          en="emergency"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">emergency</Value></style>
+  </emergency>
+  <emergency-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Notfall (unvollständig)"
+          en="emergency-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">emergency:incomplete</Value></style>
+  </emergency-incomplete>
+  <panic>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Panik"
+          en="panic"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">panic</Value></style>
+  </panic>
+  <panic-incomplete>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="Panik (unvollständig)"
+          en="panic-incomplete"/>
+    </name>
+    <style Type="Style"><Value CLASS="String">panic:incomplete</Value></style>
+  </panic-incomplete>
+</UIEquipmentMap>
